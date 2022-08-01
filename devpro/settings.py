@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-ls&lmwgxk^zg8-!*$r&mv&87fe=_)va%^2x^ary5-s-a^&ky0l
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', 'https://git.heroku.com/still-dusk-36962.git']
 
 
 # Application definition
