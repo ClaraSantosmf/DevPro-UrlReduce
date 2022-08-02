@@ -1,12 +1,14 @@
 from django.db.models import Count
 from django.db.models.functions import TruncDate
-from django.http import HttpResponse
 from django.shortcuts import render, redirect
 from django.db.models import Count
 from devpro.encurtador.models import UrlRedirect, UrlLogs
 
 def index(request):
     return render(request, 'index.html')
+
+def registrado(request):
+    pass
 
 def relatorio(request, slug):
     quarysetdourldestino = UrlRedirect.objects.get(slug=slug)
