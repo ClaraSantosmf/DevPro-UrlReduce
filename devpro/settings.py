@@ -74,7 +74,7 @@ WSGI_APPLICATION = 'devpro.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-database_url = os.enrviron.get('DATABASE_URL')
+database_url = os.environ.get('DATABASE_URL')
 
 if database_url is None:
     DATABASES = {
