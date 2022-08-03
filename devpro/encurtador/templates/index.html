@@ -23,10 +23,14 @@
           <h1 class="font-weight-bold">URL<span class="font-weight-light color-y">Reduce</span></h1>
           <p class="h5 mb-5 text-muted">Encurtador de URL</p>
 
-          <form>            
+          <form action="{% url 'registrado' %}" method="post">
+            {% csrf_token %}
             <div class="row">
               <div class="col-sm-10 input-group-lg">
-                <input type="text" id="inputContent" class="form-control" placeholder="Cole seu link aqui..." required autofocus>
+                <input type="text" name='destino' id="inputContent" class="form-control" placeholder="Cole seu link aqui..." required autofocus>
+              </div>
+              <div class="col-sm-10 input-group-lg">
+                <input type="text" name='slug' id="inputContent" class="form-control" placeholder="Escolha uma palavra para seu abreviado" required autofocus>
               </div>
               <div class="col-sm-2">
                 <button class="btn btn-lg btn-outline-primary btn-block" type="submit">Reduzir</button>

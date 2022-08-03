@@ -1,4 +1,6 @@
 -r requirements.in
 
 Django
-
+pytest-django
+flake8
+pip-tools

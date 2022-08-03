@@ -8,5 +8,5 @@ urlpatterns = [
     path('', views.index),
     path('<slug:slug>', views.redirecionador),
     path('relatorio/<slug:slug>', views.relatorio, name='relatorio'),
-    path('registrado/', views.registrado),
+    path('registrado/', views.registrado, name='registrado'),
 ]
