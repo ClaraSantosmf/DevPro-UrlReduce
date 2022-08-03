@@ -3,7 +3,7 @@ from django.db import models
 
 class UrlRedirect(models.Model):
     destino = models.URLField(max_length=180)
-    slug = models.SlugField(max_length= 120)
+    slug = models.SlugField(max_length=120, unique=True)
     criado_em = models.DateTimeField(auto_now_add= True)
     atualizado_em = models.DateTimeField(auto_now=True)
 
@@ -17,5 +17,4 @@ class UrlLogs(models.Model):
     host = models.CharField(max_length=512, null=True, blank=True)
     ip = models.GenericIPAddressField(max_length=512, null=True, blank=True)
     url_redirect = models.ForeignKey(UrlRedirect, models.DO_NOTHING, related_name='logs')
-
 
