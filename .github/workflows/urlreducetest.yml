@@ -6,12 +6,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
-      - uses: actions/checkout@v3
-      - name: Set up Python 3.8
+        uses: actions/checkout@v3
+      - name: Set up Python 3.10
         uses: actions/setup-python@v1
         with:
-          python-version: 3.8
-      - name: Instalando dependências
+          python-version: 3.10
+      - name: Instalar dependências
         run: |
           pip install -r requirements-dev.txt
       - name: Lint com Flake8
