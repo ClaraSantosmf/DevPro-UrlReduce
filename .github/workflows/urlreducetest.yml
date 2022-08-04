@@ -20,3 +20,5 @@ jobs:
       - name: Testes de aplicação com Pytest
         run: |
           python -m pytest
+      - name: Report coverage to codecov
+        uses: codecov/codecov-action@v3
