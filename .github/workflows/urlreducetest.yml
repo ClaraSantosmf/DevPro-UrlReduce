@@ -19,4 +19,4 @@ jobs:
           flake8
       - name: Testes de aplicação com Pytest
         run: |
-          pytest
+          python -m pytest
