@@ -8,3 +8,5 @@ psycopg2-binary==2.9.3
 pyparsing==3.0.9
 sqlparse==0.4.2
 whitenoise==6.2.0
+pytest-django==4.5.2
+
