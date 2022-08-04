@@ -5,3 +5,4 @@ pytest-django
 flake8
 pip-tools
 pytest-cov
+whitenoise
